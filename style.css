@@ -1,0 +1,708 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Gerais */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: rgb(31, 30, 88);
+  background: radial-gradient(
+    circle,
+    rgba(31, 30, 88, 1) 0%,
+    rgba(15, 15, 51, 1) 100%
+  );
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+.interface {
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+.btn-compre button {
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  background-color: #f3f50e;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #1f1e58;
+}
+
+.btn-compre2 button {
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  background-color: #f3f50e;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #1f1e58;
+  display: none;
+}
+
+.btn-compre3 button {
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  background-color: #f3f50e;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #1f1e58;
+}
+
+button:hover {
+  box-shadow: 0px 0px 8px #f3f50e;
+  transform: scale(1.05);
+  transition: 0.3s all;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.titulo span,
+.duvidas span,
+.oferta span,
+.info-adicional span {
+  color: #f3f50e;
+}
+
+/* Relogio */
+
+.relogio {
+  display: grid;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #011b35;
+  padding: 0.7rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 166, 0, 0.3);
+  pointer-events: none;
+  z-index: 99999;
+}
+
+.relogio h2 {
+  text-align: center;
+  margin-bottom: 0.2rem;
+  color: #ffd700;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.count-wrapper {
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 0.6rem;
+  border-radius: 15px;
+}
+
+.count-wrapper div {
+  font-weight: 800;
+  font-size: 2.8rem;
+  color: #ff7b00;
+  margin-bottom: 0.5rem;
+}
+
+.count-wrapper span {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding: 0.2rem 0;
+  background: #ffd700;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/* topo do site */
+
+.topo-do-site {
+  max-width: 70%;
+  height: 70vh;
+  margin: 0 auto;
+  margin-bottom: 3.6rem;
+  padding: 2.1rem 4%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12rem;
+  box-sizing: content-box;
+}
+
+.img-topo-site img {
+  max-width: 100%;
+  margin: 0 auto;
+  width: 727px;
+  height: 365px;
+  border-radius: 100px;
+  box-shadow: 5px 5px 10px rgba(243, 245, 14, 0.2);
+  justify-content: space-between;
+}
+
+.img-topo-site2 {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 80%;
+  top: 68%;
+}
+
+.txt-topo-site {
+  width: 40rem;
+}
+
+.txt-topo-site h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+
+h1 span {
+  color: #f3f50e;
+}
+
+.txt-topo-site p {
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.txt-topo-site p span {
+  color: #f3f50e;
+}
+
+.info-adicional {
+  width: 55%;
+  margin-left: 5rem;
+}
+
+.info-adicional h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  line-height: 2.5rem;
+}
+
+.info-adicional p {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* voce vai aprender */
+
+.section-2 {
+  height: 70vh;
+  box-shadow: 0 0 40px 10px #2a2974;
+}
+
+.section-2 .flex {
+  gap: 6rem;
+}
+
+.section-box {
+  color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  width: 30rem;
+}
+
+.section-box i {
+  font-size: 70px;
+  color: #f3f50e;
+}
+
+.section-box h3 {
+  font-size: 2rem;
+  margin: 15px 0;
+  line-height: 2rem;
+}
+
+.section-box p {
+  font-size: 1.2rem;
+}
+
+.section-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px 10px #2a2974;
+  transition: 0.2s all;
+}
+
+/* Por que Comprar */
+
+.section-3 {
+  height: 70vh;
+}
+
+.section-3 .flex {
+  gap: 6rem;
+}
+
+/* Duvidas Frequentes */
+
+.duvidas {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 40px 10px #2a2974;
+}
+
+.faq {
+  max-width: 70%;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f3f50e;
+  cursor: pointer;
+}
+
+.pergunta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pergunta h3 {
+  font-size: 1.8rem;
+}
+
+.resposta {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+}
+
+.resposta p {
+  padding-top: 1rem;
+  line-height: 1.6;
+  font-size: 1.4rem;
+}
+
+.faq.active .resposta {
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
+}
+
+.faq.active svg {
+  transform: rotate(180deg);
+}
+
+svg {
+  transition: transform 0.5s ease-in;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.faq:last-child {
+  margin-bottom: 5rem;
+}
+
+/* Oferta */
+
+.oferta {
+  height: 90vh;
+  text-align: center;
+  font-size: 2rem;
+  background: linear-gradient(rgba(5, 2, 48, 0.8), rgba(1, 14, 51, 0.9)),
+    url(img/moedas_upscayl_4x_ultrasharp.png) center center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 40px 10px #2a2974;
+  display: flex;
+  padding: 2rem;
+}
+
+.oferta p {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.oferta p span {
+  font-size: 2.5rem;
+}
+
+.traco {
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+  margin-left: 0.5rem;
+}
+
+.oferta .btn-compre3 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.img-garantia img {
+  width: 200px;
+  height: 200px;
+  margin-top: 2rem;
+}
+
+/* footer */
+
+footer p {
+  color: #fff;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+}
+
+footer {
+  background-color: rgba(15, 15, 51, 1);
+}
+
+footer a {
+  text-decoration: none;
+  color: #0000ff;
+}
+
+/* Responsividade */
+
+/* Notebook */
+
+@media screen and (min-width: 450px) and (max-width: 1440px) {
+  .count-wrapper {
+    width: 70px;
+    height: 70px;
+  }
+
+  .count-wrapper div {
+    font-size: 2rem;
+  }
+
+  .count-wrapper span {
+    padding: 0.2rem;
+    font-size: 0.7rem;
+  }
+
+  .topo-do-site {
+    margin-top: 8rem;
+  }
+
+  .txt-topo-site h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .txt-topo-site p {
+    margin-bottom: 2rem;
+  }
+
+  .info-adicional h1 {
+    margin-bottom: 1rem;
+  }
+
+  .img-topo-site {
+    display: none;
+  }
+
+  .img-topo-site2 {
+    width: 150px;
+    height: 150px;
+    left: 55%;
+    top: 76%;
+  }
+
+  .section-2 {
+    height: 80vh;
+    background: linear-gradient(rgba(8, 3, 71, 0.8), rgba(1, 14, 51, 0.9)),
+      url(img/martelo-note3.png) center center / cover no-repeat;
+  }
+
+  .section-3 {
+    height: 80vh;
+  }
+
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .pergunta h3 {
+    font-size: 1.5rem;
+  }
+
+  .img-garantia img {
+    width: 150px;
+    height: 150px;
+    margin-top: 0rem;
+  }
+}
+
+/* Tablet */
+
+@media screen and (max-width: 834px) {
+  .topo-do-site {
+    height: 77vh;
+  }
+
+  .topo-do-site .flex {
+    display: block;
+  }
+
+  .topo-do-site p {
+    font-size: 1.7rem;
+  }
+
+  .info-adicional {
+    width: 40rem;
+    margin-left: 0rem;
+    margin-top: 4rem;
+  }
+
+  .oferta {
+    height: 70vh;
+  }
+
+  .btn-compre {
+    display: none;
+  }
+
+  .btn-compre2 button {
+    display: flex;
+    margin-top: 4rem;
+  }
+
+  .img-topo-site2 {
+    display: none;
+  }
+
+  .section-2 {
+    height: 65vh;
+  }
+
+  .section-3 {
+    height: 65vh;
+  }
+
+  .section-2 .flex {
+    gap: 0rem;
+  }
+
+  .section-3 .flex {
+    gap: 0rem;
+  }
+
+  .section-box {
+    padding: 20px;
+    width: 20rem;
+  }
+
+  .section-box h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .info-adicional {
+    margin-top: 1rem;
+  }
+
+  .btn-compre2 button {
+    margin-top: -1rem;
+    padding: 10px 20px;
+  }
+
+  .section-3 {
+    height: 75vh;
+  }
+
+  .section-box h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Celulares */
+
+@media screen and (max-width: 430px) {
+  .relogio h2 {
+    font-size: 1rem;
+  }
+
+  .count-wrapper div {
+    font-size: 1.5rem;
+  }
+
+  .count-wrapper span {
+    font-size: 0.5rem;
+  }
+
+  .count-wrapper {
+    width: 50px;
+    height: 50px;
+  }
+
+  .topo-do-site {
+    margin-top: 6rem;
+    height: 72vh;
+  }
+
+  .txt-topo-site h1 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .txt-topo-site p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .txt-topo-site {
+    width: 20rem;
+  }
+
+  .img-topo-site {
+    display: none;
+  }
+
+  .info-adicional {
+    width: 20rem;
+  }
+
+  .info-adicional h1 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .info-adicional p {
+    font-size: 1rem;
+  }
+
+  .btn-compre2 button {
+    border-radius: 15px;
+    font-size: 1.2rem;
+  }
+
+  .btn-compre2 {
+    display: flex;
+    justify-content: center;
+    margin-left: -1rem;
+  }
+
+  .titulo {
+    font-size: 1.3rem;
+  }
+
+  .section-2 {
+    height: 150vh;
+    background: linear-gradient(rgba(8, 3, 71, 0.8), rgba(1, 14, 51, 0.9)),
+      url(img/martelo-note3.png) center center / cover no-repeat;
+  }
+
+  .section-3 {
+    height: 180vh;
+  }
+
+  .section-2 .flex,
+  .section-3 .flex {
+    display: grid;
+    justify-content: center;
+  }
+
+  .pergunta h3 {
+    font-size: 1.2rem;
+  }
+
+  .resposta p {
+    font-size: 1rem;
+  }
+
+  .oferta {
+    height: 95vh;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  .topo-do-site {
+    margin-left: 1.5rem;
+  }
+
+  .section-box i {
+    font-size: 50px;
+  }
+
+  .oferta p {
+    margin: 0rem 0;
+  }
+
+  .btn-compre3 button {
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    border-radius: 15px;
+  }
+
+  .img-garantia img {
+    width: 150px;
+    height: 150px;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+  }
+
+  .titulo {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .txt-topo-site h1 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  .txt-topo-site p {
+    margin-bottom: 1.5rem;
+  }
+
+  .faq {
+    max-width: 80%;
+  }
+
+  .titulo {
+    font-size: 1.1rem;
+  }
+}
